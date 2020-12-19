@@ -10,7 +10,7 @@
 ### Install
 
 ```bash
-git clone https://github.com/jnucomscience/lab-homepage.git
+git clone https://github.com/ai-lab-jnu/lab-homepage
 cd lab-homepage
 npm install 
 npm start
