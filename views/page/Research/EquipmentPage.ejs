@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <% include ../../include/head.ejs %>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <% include ../../include/header.ejs %>
+
+          <!-- Content -->
+          <section>
+            <header class="main" >
+              <h2>Equipments for Deep Learning</h2>
+            </header>
+
+            <hr>
+            <h3>Server #1</h3>
+            <div class="row">
+              <div class="col-4 col-12-small">
+                <div class="table-wrapper">
+                  <table>
+                      <thead>
+                        <tr>
+                          <th>Unit</th>
+                          <th>Specification</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>CPU</td>
+                          <td>EPYC 7702 x 2EA</td>
+                        </tr>
+                        <tr>
+                          <td>GPU</td>
+                          <td>GPU-NVTA100-40 x 4EA (40G)</td>
+                        </tr>
+                        <tr>
+                          <td>RAM</td>
+                          <td>MEM-DR432L-SL02-ER32 x 16EA (512G)</td>
+                        </tr>
+                        <tr>
+                          <td>SSD</td>
+                          <td>SSDSC2KB960G801(S4510 960G) x 2EA<br/>Additional SSD 5TB</td>
+                        </tr>
+                        <tr>
+                          <td>RAID</td>
+                          <td>AOC-S3108L-H8IR-16D0 x 2EA</td>
+                        </tr>
+                        <tr>
+                          <td>CABLE</td>
+                          <td>CBL-SAST-0531 x 2EA</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-8 col-12-small">
+                <img width="100%" src="/images/DLServer01-20210120.png" >
+              </div>
+            </div>
+
+            <hr>
+            <h3>Server #2</h3>
+            <div class="row">
+              <div class="col-8 col-12-small">
+                <div class="table-wrapper">
+                  <table>
+                      <thead>
+                        <tr>
+                          <th>Unit</th>
+                          <th>Specification</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>CPU</td>
+                          <td>Intel Xeon 6254 Gole (18 Core x 2EA) Dual CPU</td>
+                        </tr>
+                        <tr>
+                          <td>GPU</td>
+                          <td>GeForce RTX 2080Ti TURBO D6 11GB Blower</td>
+                        </tr>
+                        <tr>
+                          <td>RAM</td>
+                          <td>Samsung DDR4 16G x 12EA (192GB) - PC4-2933MHZ ECC RDIMM</td>
+                        </tr>
+                        <tr>
+                          <td>SSD</td>
+                          <td>Samsung 970 Pro 1TB x 2EA</td>
+                        </tr>
+                        <tr>
+                          <td>HDD</td>
+                          <td>HUS726T6TALE6L4 6TB</td>
+                        </tr>
+                        <tr>
+                          <td>LAN</td>
+                          <td>Dual LAN With GBE from C621</td>
+                        </tr>
+                        <tr>
+                          <td>POWER</td>
+                          <td>AX1600i (Hydro PTM+ 1600W Water Colling System)</td>
+                        </tr>
+                        <tr>
+                          <td>SLOT</td>
+                          <td>4 * PCIe 3.0 x 16 Slots, 2 * PCIe 3.0 x 8 Slots</td>
+                        </tr>
+                        <tr>
+                          <td>PORT</td>
+                          <td>6 * USB 3.0</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <h3>Installation</h3>
+            <div class="row">
+              <img width="40%" src="/images/DLServer02-20210120.png" alt="">
+            </div>
+          </section>
+        </div>
+      </div>
+      
+      <!-- Sidebar -->
+      <% include ../../include/sidebar.ejs %>
+
+    <!-- Scripts -->
+    <% include ../../include/script.ejs %>
+
+    <script>
+      document.getElementById("sidebar-research").className += " active";
+    </script>
+  </body>
+</html>

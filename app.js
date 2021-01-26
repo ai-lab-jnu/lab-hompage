@@ -53,6 +53,10 @@ app.get("/project", (req, res) => {
   res.render("page/Research/ProjectPage");
 });
 
+app.get("/equipment", (req, res) => {
+  res.render("page/Research/EquipmentPage");
+});
+
 //Introduce Page
 app.get("/introduce", (req, res) => {
   res.render("page/IntroducePage");
