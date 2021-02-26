@@ -259,9 +259,12 @@ a:hover strong {
 	color: inherit;
 }
 
-strong,
 b {
 	color: #3d4449;
+	font-weight: 700;
+}
+
+strong{
 	font-weight: 600;
 }
 
