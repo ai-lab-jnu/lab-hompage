@@ -22,8 +22,6 @@
             </header>
 
             <h2 style="text-align: left;">Senior researcher</h2>
-
-            <hr>
             <h3>Hyungkoo Kim</h3>
             <div class="row">
               <div class="col-3 col-12-small">
@@ -41,27 +39,29 @@
                       Senior software developer, 2018-2019<br>DEVSISTERS Corporation
                     </li>
                     <li>
-                      Senior software developer, 2016-2018<br>GAMEBIL COM2US Platform
+                      Senior software developer, 2016-2018<br>GAMEVIL COM2US Platform
                     </li>
-                    <li class="more">
-                      Senior software developer, 2012 – 2015<br>Netmarble Games Corporation
-                    </li>
-                    <li class="more">
-                      Senior Researcher, 2008 – 2012<br>Nable communications
-                    </li>
-                    <li class="more">
-                      Junior software developer, 2005 – 2007<br>Mobiletop Corporation
-                    </li>
-                    <li class="more">
-                      Junior software developer, 2000 -2004<br>NETS Corporation
-                    </li>
+                    <div class="more">
+                      <li >
+                        Senior software developer, 2012 – 2015<br>Netmarble Games Corporation
+                      </li>
+                      <li>
+                        Senior Researcher, 2008 – 2012<br>Nable communications
+                      </li>
+                      <li>
+                        Junior software developer, 2005 – 2007<br>Mobiletop Corporation
+                      </li>
+                      <li>
+                        Junior software developer, 2000 -2004<br>NETS Corporation
+                      </li>
+                    </div>
 
                     <button id="moreButton" onclick="more()">more</button>
                   </ul>
               </div>
             </div>
-
-
+            
+            <div class="more">
               <h3>Publications (Book)</h3>
               <ul>
                 <li>
@@ -78,39 +78,91 @@
                 <li>API references </li>
                 <li>Usability improvement of console</li>
               </ul>
-            </ul>
+            </div>
             <br>
 
 
-            <h2 style="text-align: left;">Undergraduate students</h2>
             <hr>
+            <h2 style="text-align: left;">Master's course students</h2>
             <div class="row">
+
               <div class="col-6 col-12-small">
                 <h3>Seonwoo Jung</h3>
                 <p>Major : Artificial intelligence</p>
                 <p>Field of interest : NLP, Text classification, AI medical/health care</p>
               </div>
+
               <div class="col-6 col-12-small">
-                <h3>Lee Soyeon</h3>
+                <h3>Soyeon Lee</h3>
                 <p>Major : Biomedical Science</p>
                 <p>Field of interest : medical informatics etc  </p>
               </div>
+
               <div class="col-6 col-12-small">
-                <h3>Hyeonseo Yunn</h3>
-                <p>Major : Computer Science</p>
-		            <p>Field of interest : CNN, NLP</p>
+                <h3>MyeongHyun Jeong</h3>
+                <p>Major : Biomedical Science</p>
+                <p>Field of interest : medical informatics etc  </p>
               </div>
-              <div class="col-6 col-12-small">
-                <h3>Jieun Choi</h3>
-                <p>Major : Computer Science</p>
-		            <p>Field of interest : Python, NLP etc</p>
-              </div>
+            </div>
+
+            <hr>
+            <h2 style="text-align: left;">Bachelor's course students</h2>
+            <div class="row">
+
 	            <div class="col-6 col-12-small">
                 <h3>Sangyun Lee</h3>
                 <p>Major : Artificial intelligence</p>
                 <p>Field of interest : BigData, Machine Learning</p>
               </div>
+
+              <div class="col-6 col-12-small">
+                <h3>Woohyuk Jang</h3>
+                <p>Major : Computer Science</p>
+                <p>Field of interest : BigData, NLP </p>
+              </div>
             </div>
+
+
+            <hr>
+            <h2 style="text-align: left;">O/B Members</h2>
+            <button id="moreButton2" onclick="more_ob()">more</button>
+            <div class="row more-ob">
+              <div class="col-6 col-12-small">
+                <h3>Hyeonseo Yunn (2021 mid)</h3>
+                <p>Major : Computer Science</p>
+		            <p>Field of interest : CNN, NLP</p>
+              </div>
+
+              <div class="col-6 col-12-small">
+                <h3>Jieun Choi (2021 mid)</h3>
+                <p>Major : Computer Science</p>
+		            <p>Field of interest : Python, NLP etc</p>
+              </div>
+
+              <div class="col-6 col-12-small">
+                <h3>Seyoung Min (2020 late)</h3>
+                <p>Major : Computer Science</p>
+                <p>Field of interest : Image processing, Text classification etc</p>
+
+              </div>
+              <div class="col-6 col-12-small">
+                <h3>Jaewook Shin (2020 late)</h3>
+                <p>Major : Artificial intelligence</p>
+                <p>Field of interest : NLP, BERT, ELMO, NMT, Text classification etc</p>
+
+              </div>
+              <div class="col-6 col-12-small">
+                <h3>Minji Lee (2020 late)</h3>
+                <p>Major :  Artificial intelligence</p>
+		            <p>Field of interest : DL, Big data analysis, NLP, Text classification etc</p>
+              </div>
+
+              <div class="col-6 col-12-small">
+                <h3>Sunkyung Lee (2020 mid)</h3>
+                <p>Major : Artificial intelligence</p>
+              </div>
+            </div>
+
           </section>
         </div>
       </div>
@@ -123,24 +175,79 @@
   </body>
 
   <style>
-    .more{
+    /* .more {
       font-size: 0px;
+    } */
+
+    .more {
+      display:none
+    }
+
+    .more-ob {
+      display:none
     }
   </style>
 
-  <script>
-    function more(){
-
-      var moreText = document.getElementsByClassName("more");
-
-      for(var i=0; i<moreText.length; i++){
-        moreText[i].style.fontSize = "17px"
+<script>
+  
+  var getAllElementsByClassName = function(className) {
+    var bodyHtml = document.body; 
+    var bin = []
+    var check = function(bodyHtml) {
+      if(bodyHtml.classList && bodyHtml.classList.contains(className)) {
+        bin.push(bodyHtml);
       }
-
-      var moreBtn = document.getElementById("moreButton");
-      moreBtn.style.display = "none";
-
+      if(bodyHtml.hasChildNodes()) {
+        for(var i = 0; i< bodyHtml.childNodes.length; i++) {
+          check(bodyHtml.childNodes[i]);
+        }
+      }
     }
-    document.getElementById("sidebar-people").className += " active";
+    check(bodyHtml);
+    return bin;
+  };
+
+  function removeClassName(elem, name){
+    var remClass = elem.className;
+    var re = new RegExp('(^| )' + name + '( |$)');
+    remClass = remClass.replace(re, '$1');
+    remClass = remClass.replace(/ $/, '');
+    elem.className = remClass;
+  }
+
+  function more() {
+
+    var moreText = getAllElementsByClassName("more");
+
+    for(var i=0; i<moreText.length; i++){
+      //moreText[i].style.fontSize = "17px"
+
+      // console.log(moreText[i])
+      removeClassName(moreText[i], "more")
+      // if(moreText[i].classList.contains("more")) {
+      //   moreText[i].classList.remove("more")
+      // }
+    }
+
+    var moreBtn = document.getElementById("moreButton");
+    moreBtn.style.display = "none";
+  }
+
+
+  function more_ob() {
+
+    var moreText = getAllElementsByClassName("more-ob");
+
+    for(var i=0; i<moreText.length; i++){
+      removeClassName(moreText[i], "more-ob")
+    }
+
+    var moreBtn = document.getElementById("moreButton2");
+    moreBtn.style.display = "none";
+  }
+
+  document.getElementById("sidebar-people").className += " active";
+
   </script>
+
 </html>

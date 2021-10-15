@@ -259,9 +259,12 @@ a:hover strong {
 	color: inherit;
 }
 
-strong,
 b {
-	color: #3d4449;
+	color: #474040;
+	font-weight: 600;
+}
+
+strong{
 	font-weight: 600;
 }
 
@@ -298,7 +301,7 @@ h6 a {
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 3em;
 	margin: 0 0 0.5em 0;
 	line-height: 1.3;
 }
